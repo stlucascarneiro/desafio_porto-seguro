@@ -10,11 +10,12 @@ interface IProps {
     children: any,
     variant: 'primary' | 'secondary'
     style?: any
+    onClick?: any
 }
 
-export function Button({ children, variant, style }: IProps) {
+export function Button({ children, variant, style, onClick }: IProps) {
     return (
-        <HtmlButton variant={variant} style={style}>
+        <HtmlButton variant={variant} style={style} onClick={onClick}>
             {children}
         </HtmlButton>
     );

@@ -2,13 +2,25 @@ import styled from 'styled-components'
 
 import { FaDownload } from "react-icons/fa";
 import { Breakpoints } from '_config/device/breakpoints';
+import { motion } from 'framer-motion';
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
     width: 100%;
-    height: fit-content;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
     border-radius: 12px;
     background-color: ${({ theme }) => theme.primary[700]};
     box-shadow: 0px 3px 6px #00000029;
+    margin-bottom: 5rem;
+    overflow-y: hidden;
+
+    @media ${`(max-width: 1134px)`} {
+        height: 400px;
+    }
+    @media ${Breakpoints.getBelow('tablet')} {
+        height: 284px;
+    }
 `
 
 export const TopContainer = styled.div`
@@ -24,10 +36,6 @@ export const TopContainer = styled.div`
     @media ${Breakpoints.getBelow('mobile')} {
         justify-content: space-between;
     }
-`
-
-export const PriceContainer = styled.div`
-    
 `
 
 export const Title = styled.h3`
@@ -58,6 +66,7 @@ export const LabelPrice = styled.h5`
 `
 
 export const Price = styled.h5`
+    height: 72px;
     font-size: 35px;
     line-height: 53px;
     font-weight: 700;
@@ -68,6 +77,7 @@ export const Price = styled.h5`
     @media ${Breakpoints.getBelow('tablet')} {
         font-size: 21px;
         line-height: 32px;
+        height: 40px;
     }
 `
 
@@ -123,7 +133,7 @@ export const ButtonContainer = styled.div`
     flex-grow: 1;
 
     @media ${`(max-width: 1134px)`} {
-        margin-top: 2rem;
+        margin-top: 1.25rem;
     }
 `
 
