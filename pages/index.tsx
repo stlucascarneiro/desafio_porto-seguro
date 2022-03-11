@@ -10,6 +10,7 @@ import { CTA } from "templates/CTA/CTA";
 import { Hospitals } from "templates/Features/Hospitals/Hospitals";
 import { Benefits } from "templates/Features/Benefits/Benefits";
 import { Products } from "templates/Features/Products/Products";
+import { More } from "templates/More/More";
 
 
 export async function getStaticProps() {
@@ -53,6 +54,8 @@ export default function Home(props: any) {
           <Benefits openModal={openModal} setModal={setOpenModal} />
           <Title>Outros serviços especiais</Title>
           <Products />
+          <Title>Quer saber mais?</Title>
+          <More />
         </UsableArea>
       </Body>
     </>

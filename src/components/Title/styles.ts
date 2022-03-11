@@ -1,8 +1,15 @@
 import styled from 'styled-components'
+import { Breakpoints } from '_config/device/breakpoints'
 import { Devices } from '_config/device/types'
 
 export const Container = styled.div`
     max-width: ${({ theme }) => theme.device <= Devices.mobile ? '251px' : ''};
+    margin: 4rem 0 3rem 0;
+
+    @media ${Breakpoints.getBelow('tablet')} {
+        width: calc(100% - 4rem);
+        margin-bottom: 3rem 0 2rem 0;
+    }
 `
 
 export const H2 = styled.h2`
