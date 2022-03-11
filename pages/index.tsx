@@ -1,13 +1,15 @@
 // Config
 import { useEffect, useState } from "react";
 // Components
-import { Body, Paragraph, UsableArea } from "./styles";
+import { Body, Overlay, Paragraph, UsableArea } from "./styles";
 import { Banner } from "templates/Banner/Banner";
 import { Menu } from "templates/Menu/Menu";
 import { Navbar } from "templates/Navbar/Navbar";
 import { Title } from "components/Title/Title";
 import { CTA } from "templates/CTA/CTA";
 import { Hospitals } from "templates/Features/Hospitals/Hospitals";
+import { Benefits } from "templates/Features/Benefits/Benefits";
+import { Modal } from "components/Modal/Modal";
 
 
 export async function getStaticProps() {
@@ -25,10 +27,19 @@ export async function getStaticProps() {
 
 export default function Home(props: any) {
   const [openDrawer, setOpenDrawer] = useState<boolean>(false);
+  const [openModal, setOpenModal] = useState<boolean>(false);
+
+  function handleOverlay() {
+    setOpenDrawer(false)
+    setOpenModal(false)
+  }
+
   return (
     <>
       <Navbar openDrawer={openDrawer} setDrawer={setOpenDrawer} />
-      {openDrawer && <Menu setDrawer={setOpenDrawer} />}
+      {openDrawer && <Menu />}
+      {(openDrawer || openModal) &&
+        <Overlay onClick={handleOverlay} zIndex={openModal ? 5 : 2} />}
       <Body>
         <Banner />
         <UsableArea>
@@ -38,6 +49,8 @@ export default function Home(props: any) {
           <Title>Hospitais em destaque</Title>
           <Paragraph>Contando com os melhores hospitais do Rio de Janeiro, o plano Ouro dispõe para você as redes mais referenciadas com diversos benefícios para que você tenha um atendimento totalmente personalizado.</Paragraph>
           <Hospitals list={props.hospitals} />
+          <Title>Benefícios do plano</Title>
+          <Benefits openModal={openModal} setModal={setOpenModal} />
         </UsableArea>
       </Body>
     </>

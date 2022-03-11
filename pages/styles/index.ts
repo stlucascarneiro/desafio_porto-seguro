@@ -33,3 +33,15 @@ export const Paragraph = styled.p`
         line-height: 20px;
     }
 `
+
+export const Overlay = styled.div<IOverlayProps>`
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+    position: fixed;
+    top: 0px;
+    z-index: ${({ zIndex }) => zIndex};
+`
+interface IOverlayProps {
+    zIndex: number
+}

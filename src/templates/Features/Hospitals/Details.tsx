@@ -10,7 +10,7 @@ interface IDetailsProps {
     open: boolean
 }
 
-export function Details({ detail, address, phone, open }: IDetailsProps) {
+export function Details({ detail, address, phone }: IDetailsProps) {
     const device: Devices = useContext(DeviceContext)
     if (device > Devices.tablet) {
         return (

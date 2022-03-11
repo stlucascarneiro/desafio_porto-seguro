@@ -1,17 +1,12 @@
-import { Button } from 'components/Button/Button';
-import React, { Dispatch, SetStateAction } from 'react'
 // Config
 
 // Components
-import { ButtonLabel, ContactNumber, ContactTitle, Container, FooterText, InfoContainer, MenuContainer, MenuItem, Overlay, TelephoneIcon, WhatsappIcon } from './styles';
+import { ButtonLabel, ContactNumber, ContactTitle, Container, FooterText, InfoContainer, MenuContainer, MenuItem, TelephoneIcon, WhatsappIcon } from './styles';
+import { Button } from 'components/Button/Button';
 // Assets
 
-// Type
-interface IProps {
-    setDrawer: Dispatch<SetStateAction<boolean>>
-}
 
-export function Menu({ setDrawer }: IProps) {
+export function Menu() {
     return (
         <>
             <Container
@@ -40,7 +35,6 @@ export function Menu({ setDrawer }: IProps) {
                     <FooterText>Horário de Atendimento de 8h às 17h</FooterText>
                 </InfoContainer>
             </Container>
-            <Overlay onClick={() => setDrawer(false)} />
         </>
     );
 }

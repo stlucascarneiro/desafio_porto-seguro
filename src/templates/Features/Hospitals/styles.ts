@@ -8,8 +8,12 @@ import { motion } from 'framer-motion';
 
 export const Container = styled.div`
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     flex-wrap: wrap;
+
+    @media ${Breakpoints.getBelow('mobile')} {
+        margin-bottom: 2rem;
+    }
 `
 
 export const CardContainer = styled.div`
@@ -33,7 +37,7 @@ export const CardContainer = styled.div`
     @media ${Breakpoints.getBelow('tablet')} {
         width: 100%;
         flex-grow: 0;
-        margin-bottom: 2rem;
+        margin: 0 0 1rem 0;
     }
 `
 

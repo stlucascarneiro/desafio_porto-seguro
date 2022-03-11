@@ -17,15 +17,6 @@ export const Container = styled(motion.div)`
     overflow: auto;
 `
 
-export const Overlay = styled.div`
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0, 0.7);
-    position: fixed;
-    top: 96px;
-    z-index: 2;
-`
-
 export const MenuContainer = styled.div`
     
 `
