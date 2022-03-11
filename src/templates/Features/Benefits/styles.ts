@@ -2,13 +2,14 @@ import { FaDownload } from 'react-icons/fa'
 import styled from 'styled-components'
 import { Breakpoints } from '_config/device/breakpoints'
 
-export const Container = styled.div`
+export const BenefitsContainer = styled.div`
     display: flex;
     justify-content: space-around;
-    margin-top: 3rem;
+    margin: 3rem 0 4rem 0;
 
     @media ${Breakpoints.getBelow('tablet')} {
         flex-wrap: wrap;
+        margin: 2rem 0 3rem 0;
     }
 `
 

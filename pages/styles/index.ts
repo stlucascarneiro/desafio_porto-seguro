@@ -13,7 +13,7 @@ export const Body = styled.div`
 export const UsableArea = styled.div`
     width: calc(100% - 2rem);
     max-width: 1162px;
-    height: 2000px;
+    height: 3000px;
     background-color: white;
     padding: 2.5rem 0;
 

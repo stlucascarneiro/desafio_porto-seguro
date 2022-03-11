@@ -2,7 +2,7 @@
 import { Dispatch, SetStateAction } from 'react';
 // Components
 import { Button } from 'components/Button/Button';
-import { ButtonContainer, ButtonText, CardContainer, Container, DownloadIcon, Image, ModalButtonText, ModalCaption, ModalLi, ModalTitle, ModalUl, Paragraph, Title } from './styles';
+import { ButtonContainer, ButtonText, CardContainer, BenefitsContainer, DownloadIcon, Image, ModalButtonText, ModalCaption, ModalLi, ModalTitle, ModalUl, Paragraph, Title } from './styles';
 import { Modal } from 'components/Modal/Modal';
 // Assets
 
@@ -15,7 +15,7 @@ interface IProps {
 export function Benefits({ openModal, setModal }: IProps) {
     return (
         <>
-            <Container>
+            <BenefitsContainer>
                 <CardContainer>
                     <Image src="images/background/recepcao.png" />
                     <Title>Rede referenciada</Title>
@@ -38,7 +38,7 @@ export function Benefits({ openModal, setModal }: IProps) {
                         Plano Ouro Max: <strong>R$280,00</strong>
                     </Paragraph>
                 </CardContainer>
-            </Container>
+            </BenefitsContainer>
             {openModal &&
                 <Modal>
                     <ModalTitle>Hospitais de referência</ModalTitle>

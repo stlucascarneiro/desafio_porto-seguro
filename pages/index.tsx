@@ -1,5 +1,5 @@
 // Config
-import { useEffect, useState } from "react";
+import { useState } from "react";
 // Components
 import { Body, Overlay, Paragraph, UsableArea } from "./styles";
 import { Banner } from "templates/Banner/Banner";
@@ -9,7 +9,7 @@ import { Title } from "components/Title/Title";
 import { CTA } from "templates/CTA/CTA";
 import { Hospitals } from "templates/Features/Hospitals/Hospitals";
 import { Benefits } from "templates/Features/Benefits/Benefits";
-import { Modal } from "components/Modal/Modal";
+import { Products } from "templates/Features/Products/Products";
 
 
 export async function getStaticProps() {
@@ -51,6 +51,8 @@ export default function Home(props: any) {
           <Hospitals list={props.hospitals} />
           <Title>Benefícios do plano</Title>
           <Benefits openModal={openModal} setModal={setOpenModal} />
+          <Title>Outros serviços especiais</Title>
+          <Products />
         </UsableArea>
       </Body>
     </>
