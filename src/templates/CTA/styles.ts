@@ -4,7 +4,7 @@ import { FaDownload } from "react-icons/fa";
 import { Breakpoints } from '_config/device/breakpoints';
 import { motion } from 'framer-motion';
 
-export const Container = styled(motion.div)`
+export const CTAContainer = styled(motion.div)`
     width: 100%;
     height: 240px;
     display: flex;
@@ -20,6 +20,9 @@ export const Container = styled(motion.div)`
     }
     @media ${Breakpoints.getBelow('tablet')} {
         height: 284px;
+    }
+    @media ${Breakpoints.getBelow('mobile')} {
+        margin-bottom: 3rem;
     }
 `
 

@@ -11,11 +11,15 @@ export const Body = styled.div`
 `
 
 export const UsableArea = styled.div`
-  width: calc(100% - 2rem);
-  max-width: 1162px;
-  height: fit-content;
-  background-color: white;
-  padding-top: 2.5rem;
+    width: calc(100% - 2rem);
+    max-width: 1162px;
+    height: 2000px;
+    background-color: white;
+    padding: 2.5rem 0;
+
+    @media ${Breakpoints.getBelow('mobile')} {
+        padding: 2rem 0;
+    }
 `
 
 export const Paragraph = styled.p`

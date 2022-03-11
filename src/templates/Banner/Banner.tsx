@@ -6,6 +6,7 @@ import { Container, Title, PriceSmall, PriceContainer, PriceLabel, PriceLarge, F
 import { Button } from 'components/Button/Button';
 import { DeviceContext } from '_config/context/device';
 import { Place } from '../../../public/images/illustrations/place';
+import { Devices } from '_config/device/types';
 // Assets
 
 
@@ -16,7 +17,7 @@ export function Banner() {
         <Container onMouseEnter={() => { setOpenDiscover(true) }}>
             <Title>Conforto e qualidade para levar bem-estar com alto padrão de atendimento a seus funcionários.</Title>
             <BorderContainer />
-            {device > 2 && <AltText>Conheça o plano Ouro da Porto Seguro Saúde.</AltText>}
+            {device > Devices.mobile && <AltText>Conheça o plano Ouro da Porto Seguro Saúde.</AltText>}
             <PriceContainer>
                 <PriceLabel>A partir de</PriceLabel>
                 <PriceSmall>R$</PriceSmall>

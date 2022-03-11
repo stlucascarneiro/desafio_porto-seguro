@@ -3,16 +3,16 @@ import React, { useContext, useState } from 'react'
 import { handleContainerSize } from './handlers';
 import { DeviceContext } from '_config/context/device';
 // Components
-import { ButtonContainer, ButtonText, Container, DownloadIcon, Info, Image, InfoContainer, LabelPrice, Price, Strong, Title, TopContainer } from './styles';
+import { ButtonContainer, ButtonText, CTAContainer, DownloadIcon, Info, Image, InfoContainer, LabelPrice, Price, Strong, Title, TopContainer } from './styles';
 import { Button } from 'components/Button/Button';
 import { Collapsible } from './Collapsible/Collapsible';
 import { Devices } from '_config/device/types';
 
-export function Feature() {
+export function CTA() {
     const [collapsibleOpen, setCollapsibleOpen] = useState<boolean>(false);
     const device = useContext(DeviceContext)
     return (
-        <Container
+        <CTAContainer
             animate={{ height: collapsibleOpen ? handleContainerSize() : '' }}
             transition={{ duration: 0.5 }}
         >
@@ -37,6 +37,6 @@ export function Feature() {
                 </ButtonContainer>
             </TopContainer>
             {(collapsibleOpen && device > Devices.tablet) && <Collapsible />}
-        </Container>
+        </CTAContainer>
     );
 }

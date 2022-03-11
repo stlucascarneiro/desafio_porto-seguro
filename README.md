@@ -7,3 +7,9 @@
 ## Sugestões
 
 * Padronizar elemenos de tipografia
+
+
+## Melhorias
+
+* DeviceContext gera um reload na aplicação
+* Falta de animação para desmontagem de alguns componentes
