@@ -1,13 +1,5 @@
-// Config
-
 // Components
 import { Divisor, CardContainer, Image, Li, Paragraph, ProductsContainer, Title, Ul, CheckIcon } from './styles';
-// Assets
-
-// Types
-interface IProps {
-    children: string
-}
 
 export function Products() {
     return (

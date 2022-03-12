@@ -19,7 +19,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     const [device, setDevice] = useState<Devices>(Devices.undefined);
 
     useEffect(() => {
-        // console.log(device)
         if (device === Devices.undefined) {
             DeviceController.loadDevice(device, setDevice)
         } else {

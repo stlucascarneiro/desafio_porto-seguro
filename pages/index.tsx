@@ -1,7 +1,7 @@
 // Config
 import { useState } from "react";
 // Components
-import { Body, Overlay, Paragraph, UsableArea } from "./styles";
+import { Body, Overlay, Paragraph, UsableArea } from "../src/_config/styles";
 import { Banner } from "templates/Banner/Banner";
 import { Menu } from "templates/Menu/Menu";
 import { Navbar } from "templates/Navbar/Navbar";

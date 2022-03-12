@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 // Config
 
 // Components
@@ -8,11 +8,6 @@ import { Hospital } from '../../../../public/images/illustrations/hospital';
 import { Place } from '../../../../public/images/illustrations/place';
 import { Devices } from '_config/device/types';
 import { DeviceContext } from '_config/context/device';
-
-// Types
-interface IProps {
-    children: string
-}
 
 export function Collapsible() {
     const device = useContext(DeviceContext)

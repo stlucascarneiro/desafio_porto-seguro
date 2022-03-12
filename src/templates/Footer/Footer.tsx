@@ -1,13 +1,5 @@
-// Config
-
 // Components
 import { Container, Image, Paragraph } from './styles';
-// Assets
-
-// Types
-interface IProps {
-    children: string
-}
 
 export function Footer() {
     return (

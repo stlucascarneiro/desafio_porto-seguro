@@ -1,16 +1,8 @@
-// Config
-
 // Components
 import { Button } from 'components/Button/Button';
 import { Input } from 'components/Input/Input';
 import { PhoneCall } from '../../../public/images/illustrations/phoneCall';
 import { MoreContainer, InfoContainer, Paragraph, FormContainer, ActionContainer, ButtonText, ButtonSection, ContactTitle, ContactNumber, WhatsappIcon, ButtonLabel, TelephoneIcon, FooterText } from './styles';
-// Assets
-
-// Types
-interface IProps {
-    children: string
-}
 
 export function More() {
     return (

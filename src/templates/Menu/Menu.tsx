@@ -1,10 +1,6 @@
-// Config
-
 // Components
 import { ButtonLabel, ContactNumber, ContactTitle, Container, FooterText, InfoContainer, MenuContainer, MenuItem, TelephoneIcon, WhatsappIcon } from './styles';
 import { Button } from 'components/Button/Button';
-// Assets
-
 
 export function Menu() {
     return (
