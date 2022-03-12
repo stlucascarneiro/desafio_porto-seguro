@@ -13,12 +13,12 @@ export const Body = styled.div`
 export const UsableArea = styled.div`
     width: calc(100% - 2rem);
     max-width: 1162px;
-    height: 4000px;
+    height: fit-content;
     background-color: white;
-    padding: 2.5rem 0;
+    padding: 2.5rem 0 4rem 0;
 
     @media ${Breakpoints.getBelow('mobile')} {
-        padding: 2rem 0;
+        padding: 2rem 0 3rem 0;
     }
 `
 

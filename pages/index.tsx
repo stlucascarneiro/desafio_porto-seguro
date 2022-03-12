@@ -11,6 +11,7 @@ import { Hospitals } from "templates/Features/Hospitals/Hospitals";
 import { Benefits } from "templates/Features/Benefits/Benefits";
 import { Products } from "templates/Features/Products/Products";
 import { More } from "templates/More/More";
+import { Footer } from "templates/Footer/Footer";
 
 
 export async function getStaticProps() {
@@ -57,6 +58,7 @@ export default function Home(props: any) {
           <Title>Quer saber mais?</Title>
           <More />
         </UsableArea>
+        <Footer />
       </Body>
     </>
   )
