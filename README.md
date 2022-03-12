@@ -28,12 +28,16 @@ O layout e recursos da página se encontram no Adobe XD na versão [Mobile](http
 Pensando em padronizar os componentes de UI e buscando aplicar conceitos de Design Atômico, decidi estruturar o projeto da seguinte maneira:
 
 - Átomos (Tema)
-Elementos indivisíveis como cores foram reunídos e compartilhados para toda a aplicação. Desta forma a manipulação de cores se torna mais flexível.
+
+Elementos indivisíveis como cores foram reunidos e compartilhados para toda a aplicação. Desta forma a manipulação de cores se torna mais flexível.
 - Componentes
+
 Conjuntos de formas, cores e tipografia mais simples que foram utilizados em toda a aplicação, sendo estes Botões, Inputs, Títulos e Modal.
 - Templates
-Essas são as sessões da página principal, listadas acima.
+
+Essas são as seções da página principal, listadas acima.
 - Config
+
 Nas configurações encontram-se informações base para a lógica do restante da aplicação como contextos, métodos de viewport e estilos globais.
 
 ## Responsividade
@@ -45,7 +49,7 @@ Os componentes se adaptam ao formato da tela utilizando CSS Media Queries e o es
 ## Build
 
 - A minificação dos arquivos é feita através do NextJs
-- O consumo da API é feita em tempo de build pela função `getStaticProps`. Esse método fornece ao cliente o código fonte HTML já com as informações da API e ajuda no SEO.
+- O consumo da API é feito em tempo de build pela função `getStaticProps`. Esse método fornece ao cliente o código fonte HTML já com as informações da API e ajuda no SEO.
 - O Deploy do projeto foi feito pela Vercel e é possível conferir através do link https://desafio-porto-seguro.vercel.app
 
 ## Setup
