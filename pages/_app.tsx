@@ -9,9 +9,11 @@ import { DeviceContext } from "_config/context/device";
 
 // Types
 import { Devices } from "_config/device/types";
+import { Loader } from "templates/Loader/Loader";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
     const [device, setDevice] = useState<Devices>(Devices.undefined);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         if (device === Devices.undefined) {
@@ -24,6 +26,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         }
     }, [device]);
 
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 1000);
+    }, [isLoading]);
+
     const theme = new BaseColors
 
     return (
@@ -31,8 +39,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             <DeviceContext.Provider value={device}>
                 <GlobalStyle />
                 <ThemeProvider theme={{ ...theme, device }}>
-
-                    <Component {...pageProps} />
+                    {isLoading
+                        ? <Loader />
+                        : <Component {...pageProps} />}
                 </ThemeProvider>
             </DeviceContext.Provider>
         </>
