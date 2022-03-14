@@ -9,7 +9,7 @@ import { DeviceContext } from "_config/context/device";
 
 // Types
 import { Devices } from "_config/device/types";
-import { Loader } from "templates/Loader/Loader";
+// import { Loader } from "templates/Loader/Loader";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
     const [device, setDevice] = useState<Devices>(Devices.undefined);
