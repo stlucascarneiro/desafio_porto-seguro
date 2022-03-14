@@ -3,11 +3,6 @@ import { Container, LoaderContainer, Logo } from './styles';
 import { TailSpin } from "react-loader-spinner"
 // Assets
 
-// Types
-interface IProps {
-    children: string
-}
-
 export function Loader() {
     return (
         <Container>
