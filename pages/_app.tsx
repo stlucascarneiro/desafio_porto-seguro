@@ -39,9 +39,10 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             <DeviceContext.Provider value={device}>
                 <GlobalStyle />
                 <ThemeProvider theme={{ ...theme, device }}>
-                    {isLoading
+                    {/* {isLoading
                         ? <Loader />
-                        : <Component {...pageProps} />}
+                        : <Component {...pageProps} />} */}
+                    <Component {...pageProps} />
                 </ThemeProvider>
             </DeviceContext.Provider>
         </>
