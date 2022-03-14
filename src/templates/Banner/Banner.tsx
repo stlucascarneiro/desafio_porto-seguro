@@ -28,7 +28,7 @@ export function Banner() {
                 </Button>
             </PriceContainer>
             <FooterText>*Valor referente ao plano Ouro Copar Q (ANS: 481.277/18-8) de 3 à 9 vidas, com 20% de copart. com faixa etária entre 0 e 18 anos. Sem IOF. Promoção válida até 30 de abril de 2021.</FooterText>
-            {openDiscover && <DiscoverContainer
+            {(device > Devices.tablet && openDiscover) && <DiscoverContainer
                 animate={{ width: 272, opacity: 1 }}
                 transition={{ duration: 0.7, delay: 1 }}
             >
