@@ -1,14 +1,16 @@
 import styled from 'styled-components'
 import { Breakpoints } from '_config/device/breakpoints'
 
-export const Container = styled.div`
+export const Container = styled.fieldset`
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+    border: none;
+    padding: 0;
 `
 
-export const Label = styled.label`
+export const Legend = styled.legend`
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -35,7 +37,7 @@ export const HTMLInput = styled.input`
     }
 `
 
-export const Feedback = styled.p`
+export const Feedback = styled.label`
     margin: 4px 0 0 0;
     font-size: 14px;
     color: red;

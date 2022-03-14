@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { IInputValidation, InputType, UserValidations } from 'middlewares/validations';
 import { handlePhoneMask } from './handlers';
 // Components
-import { Container, Feedback, HTMLInput, Label } from './styles';
+import { Container, Feedback, HTMLInput, Legend } from './styles';
 // Assets
 
 // Types
@@ -53,7 +53,7 @@ export function Input({ type }: IProps) {
 
     return (
         <Container>
-            <Label>{inputTypes[type].title}</Label>
+            <Legend>{inputTypes[type].title}</Legend>
             <HTMLInput
                 type={inputTypes[type].type}
                 value={inputValue}

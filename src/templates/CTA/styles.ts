@@ -4,7 +4,7 @@ import { FaDownload } from "react-icons/fa";
 import { Breakpoints } from '_config/device/breakpoints';
 import { motion } from 'framer-motion';
 
-export const CTAContainer = styled(motion.div)`
+export const CTAContainer = styled(motion.section)`
     width: 100%;
     height: 240px;
     display: flex;

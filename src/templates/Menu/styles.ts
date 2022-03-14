@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { BsWhatsapp } from 'react-icons/bs'
 import { BsTelephoneFill } from 'react-icons/bs'
 
-export const Container = styled(motion.div)`
+export const Container = styled(motion.nav)`
     width: 100%;
     max-width: 375px;
     height: calc(100% - 96px);
@@ -44,9 +44,10 @@ export const MenuItem = styled.button`
     }
 `
 
-export const InfoContainer = styled.div`
+export const InfoContainer = styled.address`
     margin-top: 4rem;
     padding: 0 1rem;
+    font-style: normal;
 `
 
 export const ContactTitle = styled.h4`

@@ -6,7 +6,7 @@ import { TiPhoneOutline } from "react-icons/ti";
 import { TiLocationOutline } from "react-icons/ti";
 import { motion } from 'framer-motion';
 
-export const Container = styled.div`
+export const Container = styled.section`
     display: flex;
     margin-bottom: 4rem;
     flex-wrap: wrap;
@@ -16,7 +16,7 @@ export const Container = styled.div`
     }
 `
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.article`
     width: 30px;
     height: fit-content;
     display: flex;

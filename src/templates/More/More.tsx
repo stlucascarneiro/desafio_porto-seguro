@@ -12,11 +12,11 @@ export function More() {
                 <Paragraph>Ainda sobrou alguma dúvida sobre qual o melhor Plano para sua empresa?<br /> Envie seus dados e deixe que a NS Benefícios entrará em contato assim que possível.</Paragraph>
             </InfoContainer>
             <ActionContainer>
-                <FormContainer>
+                <FormContainer onSubmit={(e) => e.preventDefault()}>
                     <Input type='name' />
                     <Input type='phone' />
                     <Input type='email' />
-                    <Button variant='primary' style={{ width: 'fit-content' }}>
+                    <Button variant='primary' style={{ width: 'fit-content', marginTop: '1rem' }}>
                         <ButtonText>Enviar Contato</ButtonText>
                     </Button>
                 </FormContainer>
@@ -29,7 +29,7 @@ export function More() {
                     </Button>
                     <Button variant='primary' style={{ borderRadius: '12px', marginTop: '1rem' }}>
                         <TelephoneIcon />
-                        <ButtonLabel>Clique aqui para enviar uma mensagem</ButtonLabel>
+                        <ButtonLabel>clique aqui para ligar</ButtonLabel>
                     </Button>
                     <FooterText>Horário de Atendimento de 8h às 17h</FooterText>
                 </ButtonSection>

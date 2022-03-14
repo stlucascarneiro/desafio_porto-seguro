@@ -16,7 +16,7 @@ export function Details({ detail, address, phone }: IDetailsProps) {
         return (
             <DetailCard
                 animate={{ height: 300, opacity: 1 }}
-                transition={{ duration: 2, ease: 'easeOut' }}
+                transition={{ duration: 0.5, ease: 'easeOut' }}
             >
                 <DetailContainer>
                     <Detail>{detail}</Detail>

@@ -3,7 +3,11 @@ import styled from 'styled-components'
 import { Breakpoints } from '_config/device/breakpoints'
 
 export const MoreContainer = styled.div`
-    margin-top: 3rem;
+    margin: 3rem 0;
+
+    @media ${Breakpoints.getBelow('tablet')} {
+        margin-bottom: 0;
+    }
 `
 
 export const InfoContainer = styled.div`
@@ -35,7 +39,7 @@ export const ActionContainer = styled.div`
     }
 `
 
-export const FormContainer = styled.div`
+export const FormContainer = styled.form`
     width: 100px;
     flex-grow: 1;
     display: flex;
@@ -64,10 +68,11 @@ export const ButtonText = styled.span`
     font-family: 'Open Sans', sans-serif;
 `
 
-export const ButtonSection = styled.div`
+export const ButtonSection = styled.address`
     width: 100px;
     flex-grow: 1;
     padding: 0 1rem;
+    font-style: normal;
 
     @media ${Breakpoints.getBelow('tablet')} {
         width: 100%;
@@ -113,6 +118,6 @@ export const ButtonLabel = styled.h5`
 export const FooterText = styled.p`
     font-size: 12px;
     font-weight: 300;
-    color: ${({ theme }) => theme.neutral[800]};
+    color: ${({ theme }) => theme.neutral[500]};
     text-align: center;
 `

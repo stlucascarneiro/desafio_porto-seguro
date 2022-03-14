@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Breakpoints } from '_config/device/breakpoints'
 import { FiCheck } from "react-icons/fi";
 
-export const ProductsContainer = styled.div`
+export const ProductsContainer = styled.section`
     display: flex;
     justify-content: space-around;
     margin: 3rem 0 4rem 0;
@@ -13,7 +13,7 @@ export const ProductsContainer = styled.div`
     }
 `
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.article`
     width: calc(50% - 2rem);
     max-width: 500px;
     height: 820px;

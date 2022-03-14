@@ -4,7 +4,7 @@ import { Breakpoints } from '_config/device/breakpoints'
 import { BiX } from 'react-icons/bi'
 import { motion } from 'framer-motion'
 
-export const Container = styled.div`
+export const Container = styled.section`
     width: calc(100% - 4rem);
     height: 768px;
     position: relative;

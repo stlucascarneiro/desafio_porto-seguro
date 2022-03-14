@@ -2,7 +2,7 @@ import { FaDownload } from 'react-icons/fa'
 import styled from 'styled-components'
 import { Breakpoints } from '_config/device/breakpoints'
 
-export const BenefitsContainer = styled.div`
+export const BenefitsContainer = styled.section`
     display: flex;
     justify-content: space-around;
     margin: 3rem 0 4rem 0;
@@ -13,7 +13,7 @@ export const BenefitsContainer = styled.div`
     }
 `
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.article`
     width: calc(50% - 2rem);
     max-width: 500px;
     display: flex;

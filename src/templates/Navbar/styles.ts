@@ -4,7 +4,7 @@ import { Breakpoints } from '_config/device/breakpoints'
 import { BiMenu } from 'react-icons/bi'
 import { BiX } from 'react-icons/bi'
 
-export const Container = styled.div`
+export const Container = styled.header`
     position: fixed;
     top: 0;
     width: 100%;
@@ -39,7 +39,7 @@ export const LogoContainer = styled.div`
     }
 `
 
-export const NavContainer = styled.div`
+export const NavContainer = styled.nav`
     margin-right: 2.5rem;
 
     @media ${`(max-width: 840px)`} {

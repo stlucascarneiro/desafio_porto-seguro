@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Breakpoints } from "_config/device/breakpoints"
 
-export const Body = styled.div`
+export const Body = styled.main`
     width: 100%;
     height: fit-content;
     display: flex;
