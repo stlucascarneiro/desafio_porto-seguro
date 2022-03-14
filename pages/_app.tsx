@@ -20,7 +20,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
     useEffect(() => {
         if (device === Devices.undefined) {
-            DeviceController.loadDevice(device, setDevice)
+            setTimeout(() => {
+                DeviceController.loadDevice(device, setDevice)
+            }, 5000);
         } else {
             function callback() {
                 return DeviceController.handleResize(device, setDevice, callback)
@@ -41,7 +43,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             <DeviceContext.Provider value={device}>
                 <GlobalStyle />
                 <ThemeProvider theme={{ ...theme, device }}>
-                    <Component {...pageProps} />
+                    {device === Devices.undefined
+                        ? <h1>DEVICE UNDEFINED</h1>
+                        : <Component {...pageProps} />}
                 </ThemeProvider>
             </DeviceContext.Provider>
         </>

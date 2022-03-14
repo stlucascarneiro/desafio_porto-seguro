@@ -58,4 +58,4 @@ Execute `yarn` baixar as dependências do projeto e `yarn dev` para subir o serv
 
 ## Melhorias
 
-- O método que manipula o estado `device` só é possível ser executado após a renderização do DOM. Isso leva a um reload na página podendo gerar uma perda de performance.
+- O método que manipula o estado `device` só é possível ser executado após a renderização do DOM. Isso faz com que o primeiro load da página renderize os elementos sem estilo e gera, logo após, um reload na página podendo gerar uma perda de performance.
