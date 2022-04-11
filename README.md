@@ -59,5 +59,3 @@ Execute `yarn` baixar as dependências do projeto e `yarn dev` para subir o serv
 ## Melhorias
 
 - O método que manipula o estado `device` só é possível ser executado após a renderização do DOM. Isso gera um reload dos componentes que utilizam esse estado podendo gerar uma perda de performance.
-
-- O Next possui um delay no carregamento dos estilos utilizando styled components. Minha solução foi colocar uma tela de loading no primeiro carregamento com o tempo necessário para carregar os estilos.
