@@ -1,5 +1,5 @@
 // Config
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { IInputValidation, InputType, UserValidations } from 'middlewares/validations';
 import { handlePhoneMask } from './handlers';
 // Components
@@ -32,10 +32,6 @@ const inputTypes = {
 export function Input({ type }: IProps) {
     const [inputValue, setInputValue] = useState<string>('');
     const [inputValidation, setInputValidation] = useState<IInputValidation>({ invalid: false, message: '' });
-
-    useEffect(() => {
-        console.log(inputValue)
-    }, [inputValue]);
 
     function handleInputChange(e: React.ChangeEvent<HTMLInputElement>) {
         if (type === 'phone') {

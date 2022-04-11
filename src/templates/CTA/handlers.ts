@@ -1,6 +1,5 @@
 export function handleContainerSize(): number {
     const viewportWidth = window.innerWidth
-    console.log(viewportWidth)
     if (viewportWidth > 1134) {
         return 600
     } else if (viewportWidth <= 1134 && viewportWidth > 1062) {
